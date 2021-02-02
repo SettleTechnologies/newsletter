@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static("Public"));
 // Function that listens to port 3000, once requested it performs an action.
-app.listen(port || process.env.PORT, function() {
+app.listen(process.env.PORT|| port , function() {
 
   console.log("Server is running on port 3000");
 
